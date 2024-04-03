@@ -1,0 +1,7 @@
+<div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div class="title">Piotr Kwiecień</div>
+  <div class="content"></div>
+</ng-template>
+<ng-template #elseBlock>
+</ng-template>
