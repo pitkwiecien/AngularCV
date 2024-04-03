@@ -1,24 +1,33 @@
 .top-bar {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* Dark background color */
+  padding: 10px 0; /* Add padding to top and bottom */
 }
 
 .top-bar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center; /* Center align the list items */
 }
 
 .top-bar li {
-  display: inline;
-  margin-right: 10px;
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add space between list items */
 }
 
 .top-bar a {
-  color: #fff;
   text-decoration: none;
+  color: #fff; /* White text color */
+  font-size: 18px;
+  padding: 10px 20px; /* Add padding to each link */
+  border-radius: 5px; /* Add border radius to create rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .top-bar a:hover {
-  text-decoration: underline;
+  background-color: #555; /* Darker background color on hover */
+}
+
+.top-bar a.active {
+  background-color: #666; /* Active link background color */
 }

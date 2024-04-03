@@ -1,1 +1,26 @@
-<p>hobbies works!</p>
+<div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div class="title">Hobbies</div>
+  <div class="content">
+    I have multiple hobbies. Namely:
+    <ul>
+      <li>Playing the piano</li>
+      <li>Programming</li>
+      <li>Playing basketball</li>
+      <li>Swimming</li>
+    </ul>
+  </div>
+</ng-template>
+<ng-template #elseBlock>
+  <div class="title">Zainteresowania</div>
+  <div class="content">
+    Mam wiele zainteresowań. Mianowicie:
+    <ul>
+      <li>Gra na pianinie</li>
+      <li>Programowanie</li>
+      <li>Gra w koszykówkę</li>
+      <li>Pływanie</li>
+    </ul>
+  </div>
+
+</ng-template>
