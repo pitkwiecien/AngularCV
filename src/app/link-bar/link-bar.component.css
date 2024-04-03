@@ -1,0 +1,24 @@
+.top-bar {
+  background-color: #333;
+  color: #fff;
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+}
