@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {LinkBarComponent} from "./link-bar/link-bar.component";
 import {NgIf} from "@angular/common";
 import {PolishService} from "./polish.service";

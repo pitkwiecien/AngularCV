@@ -4,7 +4,6 @@ import {EducationComponent} from "./education/education.component";
 import {ExperienceComponent} from "./experience/experience.component";
 import {HobbiesComponent} from "./hobbies/hobbies.component";
 import {NgModule} from "@angular/core";
-import {AppComponent} from "./app.component";
 import {HomeComponent} from "./home/home.component";
 
 export const routes: Routes = [
