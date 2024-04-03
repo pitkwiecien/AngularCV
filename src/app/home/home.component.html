@@ -1,7 +1,15 @@
+<div class="title">Piotr Kwiecień</div>
 <div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
 <ng-template #thenBlock>
-  <div class="title">Piotr Kwiecień</div>
-  <div class="content"></div>
+  <div class="content">
+    Welcome to my webpage. Let me tell you something about me.
+    I am 18 and I'm from Poland. I live in Warsaw. If you want to know more, click on the subpages.
+  </div>
 </ng-template>
 <ng-template #elseBlock>
+  <div class="content">
+    Witaj na mojej stronie internetowej. Pozwól, że opowiem ci coś o mnie.
+    Mam 18 lat i pochodzę z Polski. Mieszkam w Warszawie. 
+    Jeśli chcesz dowiedzieć się więcej kliknij na podstrony.
+  </div>
 </ng-template>
