@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div class="title">Contact</div>
+  <div class="content">
+    <form (ngSubmit)="submitForm()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" [(ngModel)]="formData.message" required></textarea>
+      </div>
+      <button type="submit" [disabled]="!formValid()">Send</button>
+    </form>
+
+  </div>
+</ng-template>
+<ng-template #elseBlock>
+</ng-template>

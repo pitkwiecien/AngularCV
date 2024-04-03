@@ -1,1 +1,27 @@
-<p>experience works!</p>
+<div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div class="title">Experience</div>
+  <div class="content">
+    I have experience working with many technologies. I can use different frameworks and
+    programming languages. The most important of them are:
+    <ul>
+      <li>Python</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>React</li>
+    </ul>
+  </div>
+</ng-template>
+<ng-template #elseBlock>
+  <div class="title">Doświadczenie</div>
+  <div class="content">
+    Mam doświadczenie w pracy z wieloma technologiami. Potrafię używać różnych frameworków i
+    języków programowania. Najważniejsze z nich to:
+    <ul>
+      <li>Python</li>
+      <li>C++</li>
+      <li>Java</li>
+      <li>React</li>
+    </ul>
+  </div>
+</ng-template>

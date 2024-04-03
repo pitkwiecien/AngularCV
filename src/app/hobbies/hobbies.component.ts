@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import {PolishService} from "../polish.service";
 import {CommonModule} from "@angular/common";
+import {EmotePipe} from "../emote.pipe";
 
 @Component({
   selector: 'app-hobbies',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, EmotePipe],
   templateUrl: './hobbies.component.html',
   styleUrl: './hobbies.component.css'
 })

@@ -1,33 +1,33 @@
 .top-bar {
-  background-color: #333; /* Dark background color */
-  padding: 10px 0; /* Add padding to top and bottom */
+  background-color: #333;
+  padding: 10px 0;
 }
 
 .top-bar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center; /* Center align the list items */
+  text-align: center;
 }
 
 .top-bar li {
-  display: inline-block; /* Display list items horizontally */
-  margin-right: 20px; /* Add space between list items */
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .top-bar a {
   text-decoration: none;
-  color: #fff; /* White text color */
+  color: #fff;
   font-size: 18px;
-  padding: 10px 20px; /* Add padding to each link */
-  border-radius: 5px; /* Add border radius to create rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .top-bar a:hover {
-  background-color: #555; /* Darker background color on hover */
+  background-color: #555;
 }
 
 .top-bar a.active {
-  background-color: #666; /* Active link background color */
+  background-color: #666;
 }

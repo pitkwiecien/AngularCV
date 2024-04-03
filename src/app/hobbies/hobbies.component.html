@@ -1,6 +1,6 @@
 <div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
 <ng-template #thenBlock>
-  <div class="title">Hobbies</div>
+  <div class="title">{{"Hobbies" | emote}}</div>
   <div class="content">
     I have multiple hobbies. Namely:
     <ul>
@@ -12,7 +12,7 @@
   </div>
 </ng-template>
 <ng-template #elseBlock>
-  <div class="title">Zainteresowania</div>
+  <div class="title">{{"Zainteresowania" | emote}}</div>
   <div class="content">
     Mam wiele zainteresowań. Mianowicie:
     <ul>

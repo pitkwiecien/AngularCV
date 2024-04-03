@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {PolishService} from "../polish.service";
+import {EmotePipe} from "../emote.pipe";
 
 @Component({
   selector: 'app-education',

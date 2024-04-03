@@ -2,16 +2,20 @@
   <ul>
     <div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
       <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
       <li><a routerLink="/education" routerLinkActive="active">Education</a></li>
       <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
       <li><a routerLink="/hobbies" routerLinkActive="active">Hobbies</a></li>
+      <li class="language-button"><app-language-button [src]="'../../assets/flags/UK.png'"/></li>
     </ng-template>
     <ng-template #elseBlock>
+      <li><a routerLink="/" routerLinkActive="active">O mnie</a></li>
       <li><a routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
       <li><a routerLink="/education" routerLinkActive="active">Edukacja</a></li>
       <li><a routerLink="/experience" routerLinkActive="active">Doświadczenie</a></li>
       <li><a routerLink="/hobbies" routerLinkActive="active">Zainteresowania</a></li>
+      <li class="language-button"><app-language-button [src]="'../assets/flags/Poland.png'"/></li>
     </ng-template>
   </ul>
 </nav>

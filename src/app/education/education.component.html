@@ -1,1 +1,25 @@
-<p>education works!</p>
+<div *ngIf="polishService.polish; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div class="title">Education</div>
+  <div class="content">
+    Currently, I am a student in the 4th grade of Mechatronics Technical High School number 1 in Warsaw, specializing in programming techniques. The schools I have attended are:
+    <ul>
+      <li>Primary School number 94</li>
+      <li>Social Primary School Bendarska territory Raszyńska</li>
+      <li>Mechatronics Technical High School number 1</li>
+    </ul>
+  </div>
+
+</ng-template>
+<ng-template #elseBlock>
+  <div class="title">Edukacja</div>
+  <div class="content">
+    Aktualnie jestem uczniem 4 klasy Technikum Mechatronicznego numer 1 w Warszawie, na kierunku
+    technik programista. Szkoły, do których uczęszczałem to :
+    <ul>
+      <li>Szkoła Podstawowa numer 94</li>
+      <li>Społeczna Szkoła Podstawowa Bendarska terytorium Raszyńska</li>
+      <li>Technikum Mechatroniczne numer 1</li>
+    </ul>
+  </div>
+</ng-template>

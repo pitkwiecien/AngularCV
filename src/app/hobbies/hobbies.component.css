@@ -24,11 +24,11 @@ ul {
 li {
   margin-bottom: 15px;
   position: relative;
+  padding: 20px;
 }
 
 li:nth-child(even) {
   background-color: #f9f9f9;
-  padding: 20px;
 }
 
 li::before {
